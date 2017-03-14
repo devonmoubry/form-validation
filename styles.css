@@ -1,0 +1,61 @@
+body {
+  font-variant: small-caps;
+  color: white;
+  background-color: #5ba3d6;
+}
+
+form {
+  margin-left: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+h2 {
+  display: none;
+  background-color: red;
+}
+
+h3 {
+  display: none;
+  background-color: green;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 24px;
+}
+
+label {
+  display: block;
+  text-align: left;
+}
+
+input {
+  background-color: #5ba3d6;
+  border: 1px solid white;
+  margin: 1rem 0;
+}
+
+input:valid:required {
+  border: 2px green solid;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+button {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+}

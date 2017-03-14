@@ -2,25 +2,79 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Form Validation</title>
   </head>
   <body>
+    <h1>El Form</h1>
+    <h2>Please complete the required boxes.</h2>
+    <h3>Thank you so much for submitting your form.</h3>
     <form class="info" action="index.html" method="post">
-      <input>first name</input>
-      <!-- <input>last name</input>
-      <input>email address</input>
-      <input>country</input>
-      <input>biography</input>
-      <input>phone number</input>
-      <input>affiliations</input>
-      <input>occupation</input>
-      <input>cat's name</input>
-      <input>favorite gadget</input>
-      <input>type of talent</input>
-      <input>favorite drink</input>
-      <input>special power</input>
-      <input>weapon of choice</input>
-      <input>comments</input> -->
+      <ul>
+        <li class="column1">
+          <label for="first-name">first name</label>
+          <input type="text" id="first-name" required=""></input>
+        </li>
+        <li class="column1">
+          <label for="last-name">last name</label>
+          <input type="text" id="last-name" required=""></input>
+        </li>
+        <li class="column1">
+          <label for="email">email address</label>
+          <input type="email" id="email" required=""></input>
+        </li>
+        <li class="column1">
+          <label for="country">country</label>
+          <input type="text" id="country" ></input>
+        </li>
+        <li class="column1">
+          <label for="biography">biography</label>
+          <input type="text" id="biography" ></input>
+        </li>
+        <li class="column2">
+          <label for="phone-number">phone number</label>
+          <input type="tel" id="phone-number" required="" pattern="\d{3}[\-]\d{3}[\-]\d{4}"></input>
+        </li>
+        <li class="column2">
+          <label for="affiliations">affiliations</label>
+          <input type="text" id="affiliations"></input>
+        </li>
+        <li class="column2">
+          <label for="occupation">occupation</label>
+          <input type="text" id="occupation"></input>
+        </li>
+        <li class="column2">
+          <label for="cat-name">cat's name</label>
+          <input type="text" id="cat-name"></input>
+        </li>
+        <li class="column2">
+          <label for="favorite-gadget">favorite gadget</label>
+          <input type="text" id="favorite-gadget"></input>
+        </li>
+        <li class="column3">
+          <label for="talent">type of talent</label>
+          <input type="text" id="talent"></input>
+        </li>
+        <li class="column3">
+          <label for="favorite-drink">favorite drink</label>
+          <input type="text" id="favorite-drink"></input>
+        </li>
+        <li class="column3">
+          <label for="special-power">special power</label>
+          <input type="text" id="special-power"></input>
+        </li>
+        <li class="column3">
+          <label for="weapon-of-choice">weapon of choice</label>
+          <input type="text" id="weapon-of-choice"></input>
+        </li>
+        <li class="column3">
+          <label for="comments">comments</label>
+          <input type="text" id="comments"></input>
+        </li>
+      </ul>
+
       <button type="submit" name="button">submit</button>
     </form>
   <script src="main.js" charset="utf-8"></script>
