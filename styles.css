@@ -32,18 +32,31 @@ ul {
 
 li {
   display: inline-block;
-  padding: 24px;
+  padding: 10px 24px;
 }
 
 label {
   display: block;
   text-align: left;
 }
-
+select,
 input {
   background-color: #5ba3d6;
   border: 1px solid white;
   margin: 1rem 0;
+  width: 170px;
+}
+
+select {
+  border-radius: 0;
+  color: white;
+  font-size: 12px;
+}
+
+#affiliations,
+#biography,
+#comments {
+  height: 10rem;
 }
 
 input:valid:required {
@@ -58,4 +71,21 @@ button {
   display: block;
   margin: 1rem auto;
   text-align: center;
+  background-color: #5ba3d6;
+  border: 1px solid white;
+  color: white;
+}
+
+@media (min-width: 440px) {
+    ul {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 680px) {
+    ul {
+        column-count: 3;
+        max-width: 1000px;
+        margin: auto;
+    }
 }
